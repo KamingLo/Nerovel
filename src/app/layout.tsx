@@ -19,16 +19,12 @@ export const metadata: Metadata = {
   description: "Website stylish menggunakan Next.js + Tailwind",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({children,}: Readonly<{children: React.ReactNode;}>) {
   return (
     <html lang="en">
       <body className="bg-white text-gray-800">
         <Navbar />
-        <main className="min-h-[80vh]">{children}</main>
+          <main className="min-h-[80vh]">{children}</main>
         <Footer />
       </body>
     </html>
