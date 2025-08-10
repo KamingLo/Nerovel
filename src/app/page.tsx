@@ -1,16 +1,33 @@
-import { ProductCard } from '@/components/ProductCard'
-import { Product } from '@/types/product'
+"use client";
 
-export default async function HomePage() {
-  const res = await fetch('https://dummyjson.com/products?limit=12')
-  const data = await res.json()
-  const products: Product[] = data.products
+import { useState } from 'react';
+import { useRouter } from 'next/navigation';
+
+export default function Home() {
+  const [url, setUrl] = useState('');
+  const router = useRouter();
+
+  const handleSearch = () => {
+    if (!url) return alert('Please enter a URL');
+    router.push(`/download?url=${encodeURIComponent(url)}`);
+  };
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-6">
-      {products.map((p) => (
-        <ProductCard key={p.id} product={p} />
-      ))}
+    <div className="">
+      <h1 className="text-white text-2xl font-bold mb-4">Music Downloader</h1>
+      <input
+        type="text"
+        placeholder="Paste YouTube link..."
+        value={url}
+        onChange={(e) => setUrl(e.target.value)}
+        className="p-2 rounded text-white w-96"
+      />
+      <button
+        onClick={handleSearch}
+        className="mt-4 bg-green-500 px-4 py-2 rounded hover:bg-green-600"
+      >
+        Search
+      </button>
     </div>
-  )
+  );
 }

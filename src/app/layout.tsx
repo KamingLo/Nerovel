@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Navbar from '@/components/Navbar'
-import Footer from '@/components/Footer'
+
+import Navbar from "@/components/Navbar";
+import DarkVeil from '@/components/Darkveil';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,13 +20,29 @@ export const metadata: Metadata = {
   description: "Website stylish menggunakan Next.js + Tailwind",
 };
 
-export default function RootLayout({children,}: Readonly<{children: React.ReactNode;}>) {
+export default function RootLayout({
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className="bg-white text-gray-800">
-        <Navbar />
-          <main className="min-h-[80vh]">{children}</main>
-        <Footer />
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} w-full min-h-screen relative`}
+      >
+        <main className="relative min-h-screen w-full">
+          {/* Background */}
+          <div className="fixed inset-0 z-0">
+            <DarkVeil />
+          </div>
+
+          {/* Navbar */}
+          <Navbar />
+
+          {/* Page Content under Navbar */}
+          <div className="relative z-10 flex items-center justify-center min-h-screen text-center">
+            {children}
+          </div>
+
+        </main>
       </body>
     </html>
   );
