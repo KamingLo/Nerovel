@@ -1,36 +1,109 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Kaming-Lo Music Downloader
 
-## Getting Started
+A modern web application built with Next.js that allows users to download music easily. This application features a clean, minimalist design with wishlist functionality and responsive layout.
 
-First, run the development server:
+## 🚀 Features
 
+- Music download functionality
+- Wishlist management
+- Responsive design
+- Modern UI with animations
+- About page
+- SEO optimization with Next-SEO
+
+## 🛠 Tech Stack
+
+- **Framework:** Next.js 15
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **Animation:** Framer Motion
+- **UI Components:**
+  - Radix UI
+  - Lucide React Icons
+- **Package Manager:** npm/yarn
+- **Other Libraries:**
+  - ytdl-core for YouTube downloads
+  - class-variance-authority for dynamic styling
+  - tailwind-merge for Tailwind class merging
+
+## 📦 Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/KamingLo/KaeloFoundation.git
+cd kaming-lo
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Run the development server:
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🏗 Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+src/
+├── app/               # Next.js app router pages
+│   ├── about/        # About page
+│   ├── wishlist/     # Wishlist page
+│   └── page.tsx      # Home page
+├── components/        # Reusable React components
+│   ├── Container.tsx
+│   ├── Footer.tsx
+│   ├── Navbar.tsx
+│   ├── ProductCard.tsx
+│   └── VideoCard.tsx
+├── lib/              # Utility functions and business logic
+│   └── wishlist.ts   # Wishlist management functions
+└── types/            # TypeScript type definitions
+    └── product.ts
+```
 
-## Learn More
+## 🔧 Development
 
-To learn more about Next.js, take a look at the following resources:
+- `npm run dev` - Start development server with Turbopack
+- `npm run build` - Build the application for production
+- `npm run start` - Start the production server
+- `npm run lint` - Run ESLint for code linting
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 💻 Environment Setup
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Make sure you have:
+- Node.js 16.x or later
+- npm or yarn package manager
+- A modern web browser
 
-## Deploy on Vercel
+## 🚀 Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Check out the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📝 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 📧 Contact
+
+KamingLo - [@KamingLo](https://github.com/KamingLo)
+
+Project Link: [https://github.com/KamingLo/KaeloFoundation](https://github.com/KamingLo/KaeloFoundation)
