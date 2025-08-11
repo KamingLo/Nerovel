@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 interface VideoCardProps {
   title: string;
   author: string;
@@ -17,11 +19,14 @@ export default function VideoCard({
     <div className="bg-gray-900/60 border border-white/10 backdrop-blur-xl p-3 rounded-xl w-full max-w-md flex flex-col sm:flex-row gap-3 items-start shadow-lg mx-auto">
 
       {thumbnail && (
-        <div className="w-full sm:w-32 aspect-square flex-shrink-0">
-          <img
+        <div className="w-full sm:w-32 aspect-square flex-shrink-0 relative">
+          <Image
             src={thumbnail}
             alt="thumbnail"
-            className="w-full h-full object-cover rounded-lg shadow-md"
+            fill
+            className="object-cover rounded-lg shadow-md"
+            sizes="(max-width: 640px) 100vw, 8rem"
+            style={{ objectFit: "cover" }}
           />
         </div>
       )}
