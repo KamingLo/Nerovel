@@ -1,4 +1,3 @@
-// components/Navbar.tsx
 'use client';
 import { useState } from 'react';
 import Link from 'next/link';
@@ -8,7 +7,6 @@ export default function Navbar() {
 
   const navLinks = [
     { href: '/download', label: 'Download' },
-    { href: '/usage', label: 'Usage' },
     { href: '/about', label: 'About' },
   ];
 
@@ -16,7 +14,7 @@ export default function Navbar() {
     'relative group hover:text-white transition-colors duration-300 text-gray-300';
 
   return (
-    <nav className="fixed top-4 left-1/2 -translate-x-1/2 bg-white/3 border border-white/10 backdrop-blur-xl shadow-lg rounded-full px-6 py-3 flex items-center justify-between w-[92%] max-w-3xl z-50">
+    <nav className="fixed top-4 left-1/2 -translate-x-1/2 bg-black/4 border border-white/10 backdrop-blur-xl shadow-lg rounded-full px-6 py-3 flex items-center justify-between w-[92%] max-w-3xl z-50">
       <Link href="/" className="text-lg drop-shadow-sm text-white">
         Nerovel
       </Link>

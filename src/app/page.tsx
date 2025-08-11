@@ -1,33 +1,17 @@
-"use client";
-
-import { useState } from 'react';
-import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 
 export default function Home() {
-  const [url, setUrl] = useState('');
-  const router = useRouter();
-
-  const handleSearch = () => {
-    if (!url) return alert('Please enter a URL');
-    router.push(`/download?url=${encodeURIComponent(url)}`);
-  };
 
   return (
     <div className="">
-      <h1 className="text-white text-2xl font-bold mb-4">Music Downloader</h1>
-      <input
-        type="text"
-        placeholder="Paste YouTube link..."
-        value={url}
-        onChange={(e) => setUrl(e.target.value)}
-        className="p-2 rounded text-white w-96"
-      />
-      <button
-        onClick={handleSearch}
-        className="mt-4 bg-green-500 px-4 py-2 rounded hover:bg-green-600"
-      >
-        Search
-      </button>
+      <h1 className="text-white text-3xl sm:text-4xl lg:text-5xl font-bold mb-8 [letter-spacing:-2px] leading-tight">
+        Download your favorite music<br />
+        fast, easy, without limits
+      </h1>
+
+    <Link className="rounded-full px-6 py-2 bg-white text-black m-2" href="download">Get Started</Link>
+    <Link className="rounded-full px-6 py-2 bg-black/1 border border-white/30 text-white/30 m-2" href="about">Learn More</Link>
+
     </div>
   );
 }
