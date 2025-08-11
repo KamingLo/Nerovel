@@ -29,7 +29,7 @@ export async function GET(req: NextRequest) {
 
   return new Response(readable, {
     headers: {
-      'Content-Disposition': `attachment; filename="${title}.'mp3'`,
+      'Content-Disposition': `attachment; filename="${title}.mp3`,
       'Content-Type': 'audio/mpeg',
     },
   });

@@ -12,7 +12,7 @@ export async function GET(req: NextRequest) {
   try {
     const info = await ytdl.getInfo(url);
     const videoDetails = info.videoDetails;
-
+    
     return NextResponse.json({
       title: videoDetails.title,
       thumbnail: videoDetails.thumbnails.at(-1)?.url,

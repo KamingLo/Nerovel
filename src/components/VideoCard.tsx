@@ -14,7 +14,7 @@ export default function VideoCard({
   onDownload,
 }: VideoCardProps) {
   return (
-    <div className="bg-gray-900/60 border border-white/10 backdrop-blur-xl p-4 rounded-xl w-full max-w-md flex flex-col sm:flex-row gap-4 items-start shadow-lg mx-auto">
+    <div className="bg-gray-900/60 border border-white/10 backdrop-blur-xl p-3 rounded-xl w-full max-w-md flex flex-col sm:flex-row gap-3 items-start shadow-lg mx-auto">
 
       {thumbnail && (
         <div className="w-full sm:w-32 aspect-square flex-shrink-0">
@@ -27,7 +27,7 @@ export default function VideoCard({
       )}
 
       <div className="flex flex-col flex-1 w-full">
-        <h2 className="text-lg sm:text-xl font-bold text-white line-clamp-2 text-left mb-6">
+        <h2 className="text-lg sm:text-xl font-bold text-white line-clamp-2 text-left sm:mb-6">
           {title}
         </h2>
 

@@ -48,20 +48,16 @@ export default function DownloadPage() {
   };
 
   return (
-    <div className="pt-20">
-      {/* Heading dua baris responsif */}
+    <div className="pt-25">
       <h1 className="text-white text-3xl sm:text-4xl font-bold mb-8 [letter-spacing:-2px] leading-tight text-center">
         Download your favorite music<br />
         fast, easy, without limits
       </h1>
 
-      {/* Input URL */}
       <UrlInput onSubmit={handleSearch} />
 
-      {/* Loading */}
       {loading && <p className="mt-4 text-gray-300">Loading video info...</p>}
 
-      {/* Video Info */}
       {video && (
         <div className="mt-8">
           <VideoCard
