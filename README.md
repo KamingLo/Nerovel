@@ -1,4 +1,4 @@
-# Kaming-Lo Music Downloader
+# Nerovel | Modern Youtube Music Downloader
 
 A modern web application built with Next.js that allows users to download music easily. This application features a clean, minimalist design with wishlist functionality and responsive layout.
 
