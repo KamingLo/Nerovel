@@ -11,26 +11,12 @@ A modern web application built with Next.js that allows users to download music 
 - About page
 - SEO optimization with Next-SEO
 
-## 🛠 Tech Stack
-
-- **Framework:** Next.js 15
-- **Language:** TypeScript
-- **Styling:** Tailwind CSS
-- **Animation:** Framer Motion
-- **UI Components:**
-  - Radix UI
-  - Lucide React Icons
-- **Package Manager:** npm/yarn
-- **Other Libraries:**
-  - ytdl-core for YouTube downloads
-  - class-variance-authority for dynamic styling
-  - tailwind-merge for Tailwind class merging
 
 ## 📦 Installation
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/KamingLo/KaeloFoundation.git
+git clone https://github.com/KamingLo/Nerovel.git
 cd kaming-lo
 ```
 
