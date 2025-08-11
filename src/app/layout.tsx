@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "My Modern Site",
-  description: "Website stylish menggunakan Next.js + Tailwind",
+  title: "Nerovel | Your Modern Music Downloader",
+  description: "Music Downloader From Youtube, With Modern UI",
 };
 
 export default function RootLayout({
