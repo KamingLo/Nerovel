@@ -29,15 +29,12 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} w-full min-h-screen relative`}
       >
         <main className="relative min-h-screen w-full">
-          {/* Background */}
           <div className="fixed inset-0 z-0">
             <DarkVeil />
           </div>
 
-          {/* Navbar */}
           <Navbar />
 
-          {/* Page Content under Navbar */}
           <div className="relative z-10 flex items-center justify-center min-h-screen text-center">
             {children}
           </div>
