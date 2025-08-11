@@ -17,7 +17,7 @@ A modern web application built with Next.js that allows users to download music 
 1. Clone the repository:
 ```bash
 git clone https://github.com/KamingLo/Nerovel.git
-cd kaming-lo
+cd Nerovel
 ```
 
 2. Install dependencies:
