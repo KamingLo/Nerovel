@@ -9,9 +9,23 @@ export default function Home() {
         fast, easy, without limits
       </h1>
 
-    <Link className="rounded-full px-6 py-2 bg-white text-black m-2" href="download">Get Started</Link>
-    <Link className="rounded-full px-6 py-2 bg-black/1 border border-white/30 text-white/30 m-2" href="about">Learn More</Link>
+    <Link
+        href="download"
+        className="rounded-full px-6 py-2 bg-white text-black m-2 
+                   transition-all duration-300 ease-out 
+                   hover:bg-white/70 hover:scale-105 hover:shadow-lg"
+      >
+        Get Started
+      </Link>
 
+      <Link
+        href="about"
+        className="rounded-full px-6 py-2 bg-transparent border border-white/30 text-white/70 m-2 
+                   transition-all duration-300 ease-out 
+                   hover:bg-white/20 hover:text-white hover:scale-105 hover:shadow-lg"
+      >
+        Learn More
+      </Link>
     </div>
   );
 }
