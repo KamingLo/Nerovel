@@ -1,5 +1,4 @@
 import { NextRequest } from 'next/server';
-export const runtime = 'nodejs';
 import ytdl from '@distube/ytdl-core';
 
 export async function GET(req: NextRequest) {
