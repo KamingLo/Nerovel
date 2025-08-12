@@ -7,6 +7,7 @@ export default function Navbar() {
 
   const navLinks = [
     { href: '/download', label: 'Download' },
+    { href: '/policy', label: 'Policy' },
     { href: '/about', label: 'About' },
   ];
 
