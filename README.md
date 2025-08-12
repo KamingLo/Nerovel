@@ -1,5 +1,7 @@
 # Nerovel | Modern Youtube Music Downloader
 
+This project is for educational purposes only. The author is not responsible for any misuse of this code. Please respect copyright laws.
+
 A modern web application built with Next.js that allows users to download music easily. This application features a clean, minimalist design with wishlist functionality and responsive layout.
 
 ## 🚀 Features
